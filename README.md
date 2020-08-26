@@ -1,6 +1,6 @@
 # Ada toolchain installation Action
 
-This action install an Ada development environment.
+This action installs an Ada development environment.
 
 ## Inputs
 ### `distrib`
