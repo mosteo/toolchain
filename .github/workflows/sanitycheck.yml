@@ -16,6 +16,16 @@ jobs:
        - uses: actions/checkout@master
        - uses: ada-actions/toolchain@ce2020
          with:
+           distrib: fsf
+           target: native
+         if: contains(matrix.os, 'ubuntu')
+       - run: gnatls --version 
+         if: contains(matrix.os, 'ubuntu')
+       - run: gprbuild hello
+         if: contains(matrix.os, 'ubuntu')
+
+       - uses: ada-actions/toolchain@ce2020
+         with:
            distrib: community
            target: native
        - run: gnatls --version
@@ -47,12 +57,3 @@ jobs:
        - run: gprbuild --target=riscv64-elf --RTS=zfp-spike hello
          if: contains(matrix.os, 'ubuntu')
 
-       - uses: ada-actions/toolchain@ce2020
-         with:
-           distrib: fsf
-           target: native
-         if: contains(matrix.os, 'ubuntu')
-       - run: gnatls --version 
-         if: contains(matrix.os, 'ubuntu')
-       - run: gprbuild hello
-         if: contains(matrix.os, 'ubuntu')
