@@ -18,6 +18,7 @@ jobs:
          with:
            distrib: community
            target: native
+       - run: gnatls --version
        - run: gprbuild hello
 
        - uses: ada-actions/toolchain@ce2020
@@ -50,4 +51,8 @@ jobs:
          with:
            distrib: fsf
            target: native
+         if: contains(matrix.os, 'ubuntu')
+       - run: gnatls --version 
+         if: contains(matrix.os, 'ubuntu')
+       - run: gprbuild hello
          if: contains(matrix.os, 'ubuntu')
