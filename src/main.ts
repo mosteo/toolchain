@@ -98,7 +98,7 @@ async function installGNATFSF (target : string) {
         return;
     }
 
-    await exec.exec('sudo apt install gnat gprbuild');
+    await exec.exec('sudo apt install gnat-9 gprbuild');
 }
 
 async function run() {
