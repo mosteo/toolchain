@@ -70,8 +70,10 @@ async function installGNATCommunity (year : string, target : string, install_dir
     await download(install_script_qs_url, script_qs);
 
     if (IS_WINDOWS) {
-        await io.mv(dlFile, pack + ".exe");
-        await exec.exec(`${pack}.exe --verbose --script ${script_qs} InstallPrefix=${installDir}`);
+        const execfile = path.join(tmpDir, pack + ".exe");
+        await io.mv(dlFile, execfile);
+        console.log(`Running : ${execfile} --verbose --script ${script_qs} InstallPrefix=${installDir}`)
+        await exec.exec(`${execfile} --verbose --script ${script_qs} InstallPrefix=${installDir}`);
     } else {
 
         await download(install_package_sh_url, script_sh);
