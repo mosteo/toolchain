@@ -1,5 +1,30 @@
 {
     "linux": {
+        "2021": {
+            "native": {
+                "url" : "https://community.download.adacore.com/v1/f3a99d283f7b3d07293b2e1d07de00e31e332325?filename=gnat-2021-20210519-x86_64-linux-bin",
+                "pack": "gnat-2021-20210519-x86_64-linux-bin",
+                "sha1": "f3a99d283f7b3d07293b2e1d07de00e31e332325"
+            },
+
+            "arm-elf": {
+                "url" : "https://community.download.adacore.com/v1/2ceb9d1ada2029d79556b710c6c4834cade3749f?filename=gnat-2021-20210519-arm-elf-linux64-bin",
+                "pack": "gnat-2021-20210519-arm-elf-linux64-bin",
+                "sha1": "2ceb9d1ada2029d79556b710c6c4834cade3749f"
+            },
+
+            "riscv32-elf": {
+                "url" : "https://community.download.adacore.com/v1/636d019a16eddc4457f1b29f4b2d2a5a21a98450?filename=gnat-2021-20210519-riscv32-elf-linux64-bin",
+                "pack": "gnat-2021-20210519-riscv32-elf-linux64-bin",
+                "sha1": "636d019a16eddc4457f1b29f4b2d2a5a21a98450"
+            },
+
+            "riscv64-elf": {
+                "url" : "https://community.download.adacore.com/v1/362bf88a521cd743443693f5adc4b23e1de2a2b3?filename=gnat-2021-20210519-riscv64-elf-linux64-bin",
+                "pack": "gnat-2021-20210519-riscv64-elf-linux64-bin",
+                "sha1": "362bf88a521cd743443693f5adc4b23e1de2a2b3"
+            }
+        },
         "2020": {
             "native": {
                 "url" : "https://community.download.adacore.com/v1/a639696a9fd3bdf0be21376cc2dc3129323cbe42?filename=gnat-2020-20200818-x86_64-linux-bin",
@@ -47,6 +72,19 @@
     },
 
     "win32": {
+        "2021": {
+            "native": {
+                "url" : "https://community.download.adacore.com/v1/797dbae8bdb8a3f661dad78dd73d8e40218a68d8?filename=gnat-2021-20210519-x86_64-windows64-bin.exe",
+                "pack": "gnat-2021-20210519-x86_64-windows64-bin",
+                "sha1": "797dbae8bdb8a3f661dad78dd73d8e40218a68d8"
+            },
+
+            "arm-elf": {
+                "url" : "https://community.download.adacore.com/v1/3af961d8c675e36d87934450bc6356a84a0d753b?filename=gnat-2021-20210519-arm-elf-windows64-bin.exe",
+                "pack": "gnat-2021-20210519-arm-elf-windows64-bin",
+                "sha1": "3af961d8c675e36d87934450bc6356a84a0d753b"
+            }
+        },
         "2020": {
             "native": {
                 "url" : "https://community.download.adacore.com/v1/85091aafe5cb9463f1bfa20a53b6aa0931bf9fc2?filename=gnat-2020-20200818-x86_64-windows-bin.exe",
